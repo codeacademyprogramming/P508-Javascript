@@ -1,0 +1,2 @@
+.sidebar{position:fixed;top:0;left:-350px;bottom:0;width:350px;background-color:teal;-webkit-transition:all .3s ease;transition:all .3s ease}.sidebar>.sidebar-header>.side-toggle{position:relative;width:40px;right:-40px}.sidebar.open{left:0}.sidebar.open>.sidebar-header>.side-toggle{right:0}
+/*# sourceMappingURL=style.min.css.map */

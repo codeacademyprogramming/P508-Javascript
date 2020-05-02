@@ -1,0 +1,28 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -350px;
+    bottom: 0;
+    width: 350px;
+    background-color: teal;
+    transition: all .3s ease;
+
+
+    &>.sidebar-header {
+        &>.side-toggle {
+            position: relative;
+            width: 40px;
+            right: -40px;
+        }
+    }
+
+    &.open {
+        left: 0;
+
+        &>.sidebar-header {
+            &>.side-toggle {
+                right: 0;
+            }
+        }
+    }
+}

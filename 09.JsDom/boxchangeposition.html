@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: teal;
+            display: inline-block;
+            position: absolute;
+            /* right: 0; */
+        }
+
+        .box-container {
+            position: relative;
+            border: 1px solid red;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <button>TopLeft</button>
+    <button onclick="goTopRight()">TopRight</button>
+    <button onclick="goBottomLeft()">BottomLeft</button>
+    <button>BottomRight</button>
+
+    <div class="box-container">
+        <div class="box">
+
+        </div>
+    </div>
+    <script>
+        function goBottomLeft() {
+            let box = document.querySelector('.box');
+
+            box.style.bottom = '0';
+            box.style.left = '0';
+            box.style.top =  null;
+            box.style.right = null;
+        }
+
+        function goTopRight() {
+            let box = document.querySelector('.box');
+
+            box.style.bottom = null;
+            box.style.left = null;
+            box.style.top = '0';
+            box.style.right = '0';
+        }
+    </script>
+</body>
+
+</html>
