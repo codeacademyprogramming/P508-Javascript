@@ -1,0 +1,59 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.media-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.media-container .media {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: teal;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table .thead {
+  background-color: #00000038;
+}
+
+.table td,
+.table th {
+  padding: 4px 5px;
+  border: 1px solid #cccccc;
+}
+
+.table tr:nth-child(even) {
+  background-color: #000000;
+  color: white;
+}
+
+@media print {
+  .table td,
+  .table th {
+    padding: 0;
+    border: 1px solid #cccccc;
+  }
+  .table tr:nth-child(even) {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .media {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+/*# sourceMappingURL=media.css.map */

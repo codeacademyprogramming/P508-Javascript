@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .img-post {
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            margin-bottom: 30px;
+        }
+
+        .img-h2x {
+            height: 630px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="img-post"
+                                data-bg-src="http://preview.byaviators.com/template/superlist/assets/img/tmp/product-7.jpg">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="img-post"
+                                data-bg-src="http://preview.byaviators.com/template/superlist/assets/img/tmp/product-4.jpg">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="img-post"
+                                data-bg-src="http://preview.byaviators.com/template/superlist/assets/img/tmp/product-2.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="img-post img-h2x"
+                        data-bg-src="http://preview.byaviators.com/template/superlist/assets/img/tmp/product-1.jpg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        var dImgs = document.querySelectorAll('[data-bg-src]');
+
+        dImgs.forEach((item, index) => {
+            item.style.backgroundImage = `url(${item.getAttribute('data-bg-src')})`;
+            item.removeAttribute('data-bg-src');
+        });
+    </script>
+</body>
+
+</html>

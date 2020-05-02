@@ -1,0 +1,46 @@
+const students = [
+    'Əmrah Rəhmanov',
+    'Elmin Tağıyev',
+    'Sara Əhmədova',
+    'Səftər Əkbərov',
+    'Nərmin Əliyeva',
+    'Orxan İbrahimov',
+    'Gülbahar Məmmədova',
+    'Fərid Nuruyev',
+    'Kamran Orucov',
+    'Elçin Əsgərov',
+    'Emin İsmayılov',
+    'Mədinə Əliyeva',
+    'Cavid Mehdibəyli',
+    'Orxan Hüseynli',
+    'Mahmud Yusifli',
+    'İlahə Məmmədova'
+];
+
+
+
+
+/*
+1-1000 qeder ederlerin icerisinden  ele ededleri cap etki :
+	hem ozu cut eded olsun, 
+	hem reqemleri cemi tek eded olsun,
+    hem I reqemi tek eded olsun
+    */
+
+
+
+function cemle(a, reqemler) {
+
+    let reqem, cem = 0;
+    // let i = 0;
+
+    while (a > 0) {
+        reqem = a % 10;
+        a = (a - reqem) / 10;
+        cem = cem + reqem;
+
+        reqemler.push(reqem);
+    }
+
+    return cem;
+}

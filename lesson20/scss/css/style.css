@@ -1,0 +1,404 @@
+::-moz-selection {
+  background-color: rgba(0, 159, 139, 0.85);
+}
+
+::selection {
+  background-color: rgba(0, 159, 139, 0.85);
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 40px 0;
+}
+
+form.form textarea,
+form.form input[type=text],
+form.form input[type=email] {
+  border-radius: 0;
+  padding: 12px 16px;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #ced4da;
+}
+
+form.form textarea:focus,
+form.form input[type=text]:focus,
+form.form input[type=email]:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #ced4da;
+}
+
+.address > li > i {
+  font-size: 40px;
+  color: #ced4da;
+  margin-right: 16px;
+}
+
+.header {
+  background: url(../../assets/img/slider-large-3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: color-burn;
+  background-color: #0000004a;
+}
+
+.header .icon-bar {
+  height: 3px;
+  margin-bottom: 3px;
+  display: inline-block;
+}
+
+.header .header-top {
+  border-bottom: 1px solid #ffffff38;
+  margin-bottom: 40px;
+}
+
+.header .navbar-toggle {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.header .navbar-nav li {
+  margin-right: 8px;
+}
+
+.header .navbar-nav li a {
+  color: #ffffff;
+  padding: 16px 20px;
+  display: inline-block;
+}
+
+.header .registration {
+  width: 350px;
+}
+
+.header .registration .card {
+  background-color: rgba(0, 159, 139, 0.85);
+  padding: 20px;
+}
+
+.header .registration .card .card-title {
+  padding: 8px;
+  border-bottom: 1px solid #ffffff38;
+}
+
+.header .registration .form-group {
+  position: relative;
+}
+
+.header .registration .form-group input {
+  padding-left: 30px;
+  border-radius: 0;
+}
+
+.header .registration .form-group > i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.header .registration .icon-bar {
+  height: 3px;
+  margin-bottom: 3px;
+  display: inline-block;
+}
+
+.nav-right .add-new {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+.nav-right .add-new i {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.nav-right .add-new:hover i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.has-submenu {
+  position: relative;
+}
+
+.has-submenu a {
+  position: relative;
+}
+
+.has-submenu a::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: '\f078';
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.has-submenu .submenu {
+  min-width: 200px;
+  position: absolute;
+  opacity: 0;
+  z-index: -10;
+  top: 100%;
+  left: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.has-submenu .submenu li {
+  padding: 0;
+}
+
+.has-submenu .submenu li > a {
+  color: #000000;
+}
+
+.has-submenu:hover .submenu {
+  opacity: 1;
+  display: inline-block;
+  z-index: 99;
+}
+
+#timer {
+  display: inline-block;
+  border-radius: 7px;
+  overflow: hidden;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+#timer > .hours,
+#timer > .minutes,
+#timer > .seconds {
+  float: left;
+  text-align: center;
+  min-width: 30px;
+  background-color: teal;
+}
+
+#timer > .splitter {
+  float: left;
+  padding: 0 3px;
+  background-color: orange;
+  font-weight: bolder;
+}
+
+#timer.running > .splitter {
+  -webkit-animation-name: timertick;
+          animation-name: timertick;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes timertick {
+  from {
+    color: #ffffff;
+  }
+  to {
+    color: orange;
+  }
+}
+
+@keyframes timertick {
+  from {
+    color: #ffffff;
+  }
+  to {
+    color: orange;
+  }
+}
+
+.partners {
+  padding-top: 40px;
+}
+
+.partners:hover img {
+  opacity: .8;
+}
+
+.partners li {
+  padding: 10px 16px;
+}
+
+.partners li img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  opacity: .55;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.partners li img:hover {
+  opacity: 1 !important;
+}
+
+.products .product-item {
+  position: relative;
+  color: #ffffff;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.products .product-item .group {
+  background-color: orange;
+  display: inline-block;
+  padding: 2px 10px;
+}
+
+.products .product-item .price {
+  background-color: teal;
+  display: inline-block;
+  padding: 2px 10px;
+  position: absolute;
+  min-width: 50%;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.products .product-item .description {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.products .product-item .description .title {
+  margin-top: 1.5em;
+}
+
+.products .product-item .description .stars {
+  font-size: 1.8em;
+  opacity: 0;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  z-index: 2;
+}
+
+.products .product-item .description .stars.s-1 {
+  font-size: 1.3rem;
+}
+
+.products .product-item .description .stars.s-1 li:nth-child(1) {
+  color: orange;
+}
+
+.products .product-item .description .stars.s-2 li:nth-child(1),
+.products .product-item .description .stars.s-2 li:nth-child(2) {
+  color: orange;
+}
+
+.products .product-item .description .actions {
+  opacity: 0;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  z-index: 2;
+}
+
+.products .product-item .description .actions li {
+  margin-right: 10px;
+}
+
+.products .product-item .description .actions li a {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #ffffff;
+  font-size: 1.2em;
+  color: #ffffff;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products .product-item .description .actions li a:hover {
+  background-color: #ffffff;
+  color: #000000c3;
+}
+
+.products .product-item .description .actions li:first-child a, .products .product-item .description .actions li:last-child a {
+  width: 35px;
+  height: 35px;
+}
+
+.products .product-item .description .actions li:last-child {
+  margin-right: 0;
+}
+
+.products .product-item .description:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 54, 54, 0)), color-stop(75%, rgba(54, 54, 54, 0)));
+  background: linear-gradient(to bottom, rgba(54, 54, 54, 0) 0%, rgba(54, 54, 54, 0) 75%);
+}
+
+.products .product-item:hover .description, .products .product-item.active .description {
+  top: -28px;
+  padding-bottom: 60px;
+}
+
+.products .product-item:hover .description .title, .products .product-item.active .description .title {
+  margin-top: 0;
+}
+
+.products .product-item:hover .description .stars,
+.products .product-item:hover .description .actions, .products .product-item.active .description .stars,
+.products .product-item.active .description .actions {
+  opacity: 1;
+}
+
+.products .product-item:hover .description:after, .products .product-item.active .description:after {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 54, 54, 0)), color-stop(75%, rgba(54, 54, 54, 0.7)));
+  background: linear-gradient(to bottom, rgba(54, 54, 54, 0) 0%, rgba(54, 54, 54, 0.7) 75%);
+}
+/*# sourceMappingURL=style.css.map */
