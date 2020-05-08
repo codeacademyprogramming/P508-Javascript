@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1154e1d6ee.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        .caption {
+            height: 120px;
+            font-size: 5rem;
+            color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="card">
+                    <div id="providerInfo" class="card-header">
+
+                    </div>
+                    <div class="card-body">
+
+                        <form>
+                            <div class="form-group">
+                                <label for="txtNumber">Nömrə</label>
+                                <input type="text" class="form-control" id="txtNumber">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtAmount">Məbləğ</label>
+                                <input type="text" class="form-control" id="txtAmount">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtCardNo">Kartın nömrəsi</label>
+                                <input type="text" class="form-control" id="txtCardNo">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtMonth">Ay</label>
+                                <input type="text" class="form-control" id="txtMonth">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="txtYear">İl</label>
+                                <input type="text" class="form-control" id="txtYear">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="txtSecretNo">Təhlükəsizlik kodu</label>
+                                <input type="text" class="form-control" id="txtSecretNo">
+                            </div>
+                            <a href="index.html" class="btn btn-danger">İmtina etmək</a>
+                            <a href="#" id="btnPay" class="btn btn-success">Ödəmək</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/payment.js"></script>
+</body>
+
+</html>
