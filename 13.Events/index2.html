@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .circle {
+            width: 200px;
+            height: 200px;
+            background-color: teal;
+        }
+
+        .square {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            position: relative;
+            /* transform: rotate(0); */
+            transition: all 1s;
+            /* border: none; */
+        }
+
+        .r45 {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="circle" onclick="clicklendi()" onmouseover="kursorElementUzerineGelende(event)"
+        onmouseout="kursorElementdengetdi(event)">
+
+    </div>
+
+    <div class="square" onmouseover="rotateTo()" onmouseout="rotateBack()">
+
+    </div>
+
+    <script src="assets/js/index2.js"></script>
+</body>
+
+</html>

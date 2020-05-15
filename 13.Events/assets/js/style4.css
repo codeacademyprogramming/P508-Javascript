@@ -1,0 +1,33 @@
+.form-group {
+    display: inline-block;
+    padding: 5px;
+    padding-top: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.form-group>.form-label {
+    position: absolute;
+    left: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.form-group>.form-control {
+    position: relative;
+    z-index: 1;
+    border: none;
+    background-color: transparent;
+    padding: 4px;
+    outline: none;
+}
+
+.form-group>.form-control:focus+.form-label, .form-group.active .form-label {
+    top: -25%;
+}
+
+.form-group>.form-control:focus, .form-group.active .form-control {
+    border-bottom: 1px solid teal;
+    
+}

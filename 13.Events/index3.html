@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>
+        <input type="checkbox" id="raziyam"
+        onchange="deyishdi()"
+        onclick="cliklendi()"
+        >
+        Raziyam
+    </label>
+
+    <input type="text" id="message" onchange="messageChange(this)">
+
+
+    <select id="reqemler" onchange="secildi(this)">
+        <option value="1">Text-1</option>
+        <option value="2">Text-2</option>
+        <option value="3">Text-3</option>
+        <option value="4">Text-4</option>
+    </select>
+
+    <select onchange="changeColor(this)">        
+        <option value="blue">Goy</option>
+        <option value="red">Qirmizi</option>
+        <option value="green">Yashil</option>
+    </select>
+
+    <select onchange="goWebSite(this)">        
+        <option value="https://google.com">Google</option>
+        <option value="https://facebook.com">Facebook</option>
+        <option value="https://linkedin.com">Linkedin</option>
+    </select>
+
+    <script src="assets/js/index3.js"></script>
+</body>
+
+</html>
