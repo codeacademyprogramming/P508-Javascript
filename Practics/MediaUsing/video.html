@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fullscreen{
+            position: fixed;
+            top:0;
+            left:0;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <video width="100" height="100vh" id="vid">
+        <source src="" type="video/mp4">
+        Desteklenmeyen format
+    </video>
+
+    <button id="play">
+        Oxut
+    </button>
+    <button id="pause">
+        Oxut
+    </button>
+
+    <script>
+        let vid = document.querySelector('#vid');
+        let play = document.querySelector('#play');
+        let pause = document.querySelector('#pause');
+
+        play.onclick = function () {
+            vid.play();
+        };
+        pause.onclick = function () {
+            vid.pause();
+        };
+
+        window.addEventListener('load',function()
+        {
+            let video = document.createElement('video');
+            video.classList.add('fullscreen');
+            video.setAttribute('width',screen.width);
+            video.setAttribute('height',screen.height);
+            video.setAttribute('controls','');
+            
+            let source = document.createElement('source');
+            source.setAttribute('type','video/mp4');
+            source.setAttribute('src','assets/videos/video1.mp4');
+
+            video.appendChild(source);
+
+            document.body.appendChild(video);
+            // video.play();
+        });
+    </script>
+</body>
+
+</html>
