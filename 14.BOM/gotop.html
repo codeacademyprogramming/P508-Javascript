@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/1154e1d6ee.js" crossorigin="anonymous"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            padding: 80px 0;
+            height: 400px;
+        }
+
+        #home {
+            background-color: teal;
+        }
+
+        #services {
+            background-color: orange;
+        }
+
+        #about {
+            background-color: tomato;
+        }
+
+        .gotop {
+            display: flex;
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            background-color: #000000c8;
+
+            justify-content: center;
+            align-items: center;
+
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.5rem;
+
+            position: fixed;
+            right: 20px;
+            bottom: -120px;
+
+
+            transition: bottom 0.3s;
+        }
+
+        .gotop.active {
+
+            bottom: 20px;
+        }
+
+
+        .slide-container {
+            display: inline-block;
+            width: 200px;
+            height: 150px;
+            overflow: hidden;
+
+        }
+
+        .slide {
+            display: flex;
+            flex-flow: row nowrap;
+            width: 600px;
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .slide li {
+            width: 200px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>
+            <a href="introl.html">Intro</a>
+        </li>
+        <li>
+            <a href="gotop.html">Go Top Practice</a>
+        </li>
+        <li>
+            <a href="https://google.com">Google</a>
+        </li>
+    </ul>
+
+    <a href="#" class="gotop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <div class="slide-container">
+        <ul class="slide">
+            <li style="background-color:teal"></li>
+            <li style="background-color:orange"></li>
+            <li style="background-color:tomato"></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+
+    <section id="home"></section>
+    <section id="services"></section>
+    <section id="about"></section>
+
+
+
+
+
+
+
+    <script src="assets/js/gotop.js"></script>
+</body>
+
+</html>

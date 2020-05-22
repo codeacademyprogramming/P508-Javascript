@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header nav ul {
+            list-style: none;
+            display: flex;
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            padding: 0;
+            margin: 0;
+
+            background-color: #000000c8;
+        }
+
+        header nav ul li a {
+            display: inline-block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        header nav ul li a.active {
+            color: #000000;
+            background-color: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            margin-top: 48px;
+        }
+
+        section {
+            padding: 80px 0;
+            height: 500px;
+        }
+
+        #home {
+            background-color: teal;
+        }
+
+        #services {
+            background-color: orange;
+        }
+
+        #about {
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="home"></section>
+    <section id="services"></section>
+    <section id="about"></section>
+
+
+    <script src="assets/js/scrollpy.js"></script>
+</body>
+
+</html>
