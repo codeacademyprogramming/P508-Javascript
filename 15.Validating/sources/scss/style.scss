@@ -1,0 +1,22 @@
+.js-validate {
+
+    .form-control {
+        padding: 15px 20px;
+        border-radius: 5px;
+        border: 0.5px solid #cccccc;
+        outline: none;
+
+        &:focus {
+            box-shadow: 0px 0px 5px 0px #2196F3;
+        }
+
+        &.error{
+            box-shadow: 0px 0px 5px 0px #ad0537;
+        }
+
+        &.success{
+            box-shadow: 0px 0px 5px 0px teal;
+        }
+    }
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/1154e1d6ee.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <form id="userForm" class="js-validate" novalidate>
+        
+        <input type="text" class="form-control"
+        id="secretword">
+        <button onclick="checkInput()">
+            Yoxla
+        </button>
+        <hr>
+        <p>
+            Pizza neli olsun?
+        </p>
+        <ul class="form-control" id="choosen">
+            <li><input type="checkbox" name="gradient" value="cheese"></li>
+            <li><input type="checkbox" name="gradient" value="tomato"></li>
+        </ul>
+        <hr>
+        <select name="" id="genderId" class="form-control">
+            <option value="" selected disabled></option>
+            <option value="1">Kisi</option>
+            <option value="2">Qadin</option>
+        </select>
+        <hr>
+        <input type="text" class="form-control" id="userName" value="test" required placeholder="Adiniz"><br>
+        <input type="text" placeholder="Soyadiniz"><br>
+        <input type="email" placeholder="E-poct addressiniz"><br>
+        <input type="number" class="form-control" required id="age" max="75" min="18" value="22"
+            placeholder="Yasiniz"><br>
+
+        <input type="submit" value="Gonder"><br>
+
+        <button>
+            <i class="fas fa-paper-plane"></i>
+            Gonder 2
+        </button>
+    </form>
+
+    <script src="assets/js/inputvalidating.js"></script>
+</body>
+
+</html>
