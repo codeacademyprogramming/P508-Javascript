@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .sidebar {
+            width: 340px;
+            background-color: teal;
+
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+
+        .buttons {
+            position: fixed;
+            right: 0;
+            top: 0;
+
+        }
+
+        li.active {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="sidebar" state="off">
+        <button id="prev">
+            Prev
+        </button>
+        <button id="next">
+            Next
+        </button>
+        <nav>
+            <ul>
+                <li class="active">Text-1</li>
+                <li>Text-2</li>
+                <li>Text-3</li>
+                <li>Text-4</li>
+                <li>Text-5</li>
+
+                <p>Menu</p>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="buttons">
+        <button id="btnTeal">
+            Teal
+        </button>
+
+        <button id="btnOrange">
+            Orange
+        </button>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+
+    <script src="assets/js/sidebar.js"></script>
+
+</body>
+
+</html>
