@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+
+                <div class="card">
+                    <div class="card-header">
+                        Məhsullar
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush" id="productNames">
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-6">
+
+                <form class="card" id="productCard">
+                    <div class="card-header">
+                        Ətraflı
+                    </div>
+                    <img width="200" class="card-img-top" id="productImage">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Məhsul adı</label>
+                            <input type="text" class="form-control" id="title" name="title">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Qeyd</label>
+                            <textarea class="form-control" rows="5" id="description" name="description"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Qiymet</label>
+                            <input type="text" class="form-control" id="price" name="price">
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <button type="reset" class="btn btn-warning">
+                            Təmizlə
+                        </button>
+                        <button type="submit" class="btn btn-success">
+                            Əlavə et
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

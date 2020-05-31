@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form id="myForm">
+        <input type="text" id="phone" value="055-555-55-55">
+
+        <input type="submit" value="YOXLA">
+    </form>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script>
+        $('#myForm').submit(function (e) {
+            let myForm = document.querySelector('#myForm');
+            const phonePattern = /^\d{3}-\d{3}-\d{2}-\d{2}$/g;
+            let myPhone = document.querySelector('#phone');
+            let yocla = phonePattern.test(myPhone.value);
+
+            // myForm.addEventListener();
+
+            // console.log(myPhone.value)
+            console.log(`'${myPhone.value}'`);
+            console.log(yocla);
+
+            if (yocla) {
+                console.log('TRUE');
+
+            }
+
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
