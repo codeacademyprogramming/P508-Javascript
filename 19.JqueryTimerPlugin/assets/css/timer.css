@@ -1,0 +1,42 @@
+ul {
+    list-style: none;
+}
+
+.timer {
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.timer li {
+    padding: 2px 8px;
+    background-color: teal;
+}
+
+.timer li:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.timer li:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.timer li:nth-child(even) {
+    background-color: orange;
+}
+
+.timer.running li:nth-child(even) {
+    animation-name: pulse;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes pulse {
+    from {
+        color: white;
+    }
+    to {
+        color: orange;
+    }
+}
